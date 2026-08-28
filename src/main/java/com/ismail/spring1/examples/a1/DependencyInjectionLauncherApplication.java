@@ -12,10 +12,17 @@ import java.util.Arrays;
 
 @Component
 class YourBusinessClass{
-    @Autowired
+
     private Dependency1 dependency1;
-    @Autowired
     private Dependency2 dependency2;
+    @Autowired
+    public void setDependency1(Dependency1 dependency1) {
+        this.dependency1 = dependency1;
+    }
+    @Autowired
+    public void setDependency2(Dependency2 dependency2) {
+        this.dependency2 = dependency2;
+    }
 
     public String toString(){
         return new StringBuilder("using ").append(dependency1).append(" and ").append(dependency2).toString();
