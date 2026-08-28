@@ -1,7 +1,5 @@
-package com.ismail.spring1;
+package com.ismail.spring1.helloworld;
 
-import com.ismail.spring1.game.GameRunner;
-import com.ismail.spring1.game.PacMan;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class App02HelloWorldSpring {
@@ -12,6 +10,9 @@ public class App02HelloWorldSpring {
         //2 : configure the things that we want spring to manage using a configuration class ConfigurationHelloWorld
         //3 : retrieving beans managed by spring
         System.out.println(context.getBean("name"));
+        System.out.println(context.getBean("age"));
+        System.out.println(context.getBean("person"));
+        System.out.println(context.getBean("address"));
 
     }
 
